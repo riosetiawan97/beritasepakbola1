@@ -1,0 +1,233 @@
+body{
+font-family:arial;
+font-size:14px;
+}
+#canvas{
+	width : 1200px;
+	margin : 0px auto;
+	border: 1px solid silver;
+	box-shadow: 0 0 10px;
+	margin-top:10px;	
+}
+
+#header{
+font-size:20px;
+width:100%;
+height:160px;
+}
+#header img{
+margin-bottom:-6px;
+}
+#menu{
+background-color:#0066ff;
+font-family: franklin gothic medium,segoe ui;
+}
+
+.utama{		
+    position: relative;
+	display: inline-table;
+}
+.utama a:hover{
+	background-color:#0033cc;
+}
+
+.utama a{
+	display:block;
+	text-decoration:none;
+	line-height:40px;
+	padding: 0 10px;
+	color : #fff;
+}
+
+.dropdowncontent{	
+	right:0;
+	display: none;
+	position: absolute;
+	z-index: 2;
+}
+
+.utama:hover .dropdowncontent{
+	display:block;
+}
+
+.dropdowncontent a{
+	background-color: #6cf;
+	width : 140px;
+}
+.dropdowncontent a:hover{
+	background-color:#0033cc;
+}
+.right{
+	float:right;
+}
+
+#isi{	
+padding:20px;
+min-height:400px;
+}
+
+
+/* css home_admin */
+#headercontent{
+width:100%;
+background-color:#0066ff;
+display: inline-table;
+font-family: franklin gothic medium,segoe ui;
+}
+
+#contentinfo{
+color : #fff;
+line-height:30px;
+padding: 0 10px;
+float:left;
+}
+
+.content{
+	word-wrap: break-word;
+	text-align: justify;
+	border:1px solid #ccc;
+	margin-bottom: 10px;		
+}
+
+.content .image { padding: 2px; margin: 5px 10px 0 5px; border: 1px solid #B4B4B4; float: left; width:50px; height:50px; text-align: center;}
+
+.content .image .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.content .image img {
+	vertical-align: middle;
+	max-width:50px;
+	max-height:50px;
+}
+
+.daftarmenu{
+width: 90px;
+	display: inline-table;
+	margin: 10px 5px;	
+	border:1px solid #000;
+}
+
+.daftarmenu img {
+	vertical-align: middle;
+	max-width:48px;
+	max-height:48px;
+}
+.daftarmenu a:hover{
+	background-color:#989a9f;
+}
+
+.daftarmenu a{	
+	text-align : center;
+	background-color:#d4d7dd;
+	display:block;
+	text-decoration:none;
+	line-height:40px;
+	padding: 10px 5px;
+	color : #000;
+}
+
+.datamember .image { padding: 2px; border: 1px solid #B4B4B4; width:50px; height:50px; text-align: center;}
+
+.datamember .image .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.datamember .image img {
+	vertical-align: middle;
+	max-width:50px;
+	max-height:50px;
+}
+
+#forum table a { color: #000; text-decoration: none;  }
+#forum table a:hover { color: #EA1C1C; }
+
+/* css button */
+.btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 5px 10px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */
+.default:hover {background: #ddd;}
+
+
+
+
+/* css sidebar_left */
+#sidebar_left {
+	font-family: franklin gothic medium,segoe ui;
+	width: 15%;
+	float: left;
+	margin-right: 20px;	
+}
+
+#sidebar_left ul{	
+	background-color:#0066ff;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#sidebar_left ul li.utama{
+	display: block;
+}
+#sidebar_left ul li:hover{
+	background-color:#0033cc;
+}
+
+#sidebar_left ul li a{
+	display:block;
+	text-decoration:none;
+	line-height:40px;
+	padding: 0 10px;
+	color : #fff;
+}
+
+.klasemen{
+    width: 100%;
+    border: 1px solid #ddd; 
+	margin-bottom:10px;
+}
+.klasemen tr:nth-child(even) {
+    background-color: #dad7d7;
+}
+
+.infohalaman{margin-right:10px; float:left;}
+.pagination{ margin-top:10px; display:inline-table;}
+.pagination button { }
+
+#sidebar_right {
+	padding-left:6px;
+	border-left : 1px solid silver;
+	width: 80%;	
+	float: right;
+	margin-right: 20px;
+	margin-top : 10px;
+}
+.clear {
+	clear: both;
+}
+#footer{
+font-family: franklin gothic medium, segoe ui;
+text-align:center;
+padding:20px;
+background-color:#ccc;
+bottom: 0;
+}

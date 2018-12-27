@@ -1,0 +1,89 @@
+body{
+font-family:arial;
+font-size:14px;
+background-color : #222;
+}
+#utama{
+	width:300px;
+	margin: 0 auto;
+	margin-top: 12%;
+}
+#judul{
+	padding:15px;
+	text-align:center;
+	color:#fff;
+	font-size:20px;
+	background-color:#339966;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+	border-bottom: 3px solid #336666;
+}
+#inputan{
+	background-color:#ccc;
+	padding:20px;
+	border-bottom-right-radius:10px;
+	border-Bottom-left-radius:10px;
+}
+#inputan a{
+	text-decoration:none;
+	color : green;
+}
+
+#inputan a:hover{
+	color : red;
+}
+
+input, select, textarea{
+	padding: 10px;
+	border:0;
+}
+textarea{
+	font-family:arial;
+	font-size:13px;
+}
+.lg{
+	width:100%;
+	margin-bottom:10px;
+}
+.button{
+	margin-top:10px;
+	display:inline-table;
+	width:100%;
+}
+.btn{
+	background-color:#339966;
+	border-radius:3px;
+	color:#fff;
+}
+.btn:hover{
+	background-color:#336666;
+	cursor : pointer;
+}
+.btn-right{	
+	float:right;
+	background-color:#339966;
+	padding:10px;
+	text-decoration:none;
+	border-radius:3px;
+	color:#fff;
+	border: none; 
+	cursor: pointer; 
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */
+.default:hover {background: #ddd;}
+
+.warning {background:#FF9900; color:#ffffff; padding:10px; border-radius:5px; border:1px; text-align:center;margin:auto;
+ width:400px; margin-top:20px;}

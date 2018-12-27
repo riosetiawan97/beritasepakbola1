@@ -1,0 +1,635 @@
+body{
+font-family:arial;
+font-size:14px;
+}
+#canvas{
+	width : 1200px;
+	margin : 0px auto;
+	border: 1px solid silver;
+	box-shadow: 0 0 10px;
+	margin-top:10px;	
+}
+
+#header{
+font-size:20px;
+width:100%;
+height:160px;
+}
+
+#tabpencarian{
+background-color:#79b0d5;
+font-family: franklin gothic medium,segoe ui;
+padding-top:10px;
+margin-bottom:10px;
+}
+
+#formpencarian{
+display: inline-table;
+height:10px;
+padding-left:5px;
+}
+#menu{
+background-color:#0066ff;
+font-family: franklin gothic medium,segoe ui;
+}
+
+.utama{
+	display: inline-table;	
+    position: relative;
+}
+.utama a:hover{
+	background-color:#0033cc;
+}
+
+.utama a{
+	display:block;
+	text-decoration:none;
+	line-height:40px;
+	padding: 0 10px;
+	color : #fff;
+}
+
+.dropdownkiri{	
+	display: none;
+	position: absolute;
+	z-index: 2;
+}
+
+.utama:hover .dropdownkiri{
+	display:block;
+}
+
+.dropdownkiri a{
+	background-color: #6cf;
+	width : 140px;
+}
+.dropdownkiri a:hover{
+	background-color:#0033cc;
+}
+
+.dropdownkanan{	
+	right:0;
+	display: none;
+	position: absolute;
+	z-index: 2;
+}
+
+.utama:hover .dropdownkanan{
+	display:block;
+}
+
+.dropdownkanan a{
+	background-color: #6cf;
+	width : 140px;
+}
+.dropdownkanan a:hover{
+	background-color:#0033cc;
+}
+.right{
+	float:right;
+}
+
+#isi{	
+padding:20px;
+min-height:400px;
+}
+
+#sidebar_left {
+	width: 70%;	
+	float: left;
+	padding-right: 10px;
+	border-right : 1px solid silver;
+}
+
+/* css button */
+.btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 5px 10px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.infobutton {background-color: #2196F3;} /* Blue */
+.infobutton:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */
+.default:hover {background: #ddd;}
+
+/* kategori berita */
+#item {
+	border-bottom : 1px solid silver;
+	overflow: hidden;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-left: 0;
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 5px;
+    padding-left: 0;
+	word-wrap: break-word;
+}
+
+#item .isiberita{
+	float:left;
+	word-wrap: break-word;
+	text-align: justify;
+	border:1px solid #ccc;
+	margin-bottom: 10px;		
+}
+
+#item h2 {
+	margin: 0 0 0px 0;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+#item h2 a { color: #000; text-decoration: none;  }
+#item h2 a:hover { color: #EA1C1C; }
+#item .image { padding: 2px; margin: 2px 10px 0 0; border: 1px solid #B4B4B4; float: left; }
+#item .info { margin: 0 0 5px 0; font-size: 11px; color: #333333; }
+#item .info .date {
+	margin-top: 0;
+	margin-right: 15px;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0px;
+}
+/* #8 Post */
+
+.post {margin-bottom: 20px;word-wrap: break-word;}
+.post p {
+	margin: 0 0 14px 0;
+	text-align: justify;
+	line-height:17px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+.post img {
+  display: block;
+  max-width:100%;
+  max-height:100%;
+  width: auto;
+  height: auto;
+}
+	.post .info {
+	font-size: 14px;
+	color: #333333;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+}
+		.post .info .date { 0 0 no-repeat;
+	margin-top: 0;
+	margin-right: 15px;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+/* #9 Comments */
+.formkomen {margin-bottom: 20px;border: 1px solid silver;}
+#headerkomen{
+width:100%;
+background-color:#0066ff;
+display: inline-table;
+font-family: franklin gothic medium,segoe ui;
+}
+
+#komentanggal{
+color : #fff;
+line-height:30px;
+padding: 0 10px;
+float:left;
+}
+
+.pilihankomen {
+    position: relative;
+}
+
+.pilihankomen a:hover{
+	background-color:#0033cc;
+}
+
+.pilihankomen a{
+	display:block;
+	text-decoration:none;
+	line-height:30px;
+	padding: 0 10px;
+	color : #fff;
+}
+
+.pilihankomen:hover .dropdownkomen{
+	display:block;
+}
+
+.dropdownkomen{
+	right:0;
+	display: none;
+	position: absolute;
+	z-index: 2;
+}
+
+.dropdownkomen a{
+	background-color: #6cf;
+	width : 60px;
+}
+.dropdownkomen a:hover{
+	background-color:#0033cc;
+}
+
+
+.komen{
+	word-wrap: break-word;
+	text-align: justify;
+	border:1px solid #ccc;
+	margin-bottom: 10px;		
+}
+
+.komen .image { padding: 2px; margin: 5px 10px 0 5px; border: 1px solid #B4B4B4; float: left; width:50px; height:50px; text-align: center;}
+
+.komen .image .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.komen .image img {
+	vertical-align: middle;
+	max-width:50px;
+	max-height:50px;
+}
+
+.komen p{
+	margin: 10px 10px 20px 10px;		
+}
+
+#pesankomen{
+	padding: 0px;
+	width: 100%;
+}
+
+.balasan{	
+	margin-left: 10px;
+	}
+.komen .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 15%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+	display: inline-table;
+}
+
+.komen .active, .collapsible:hover {
+    background-color: #555;
+}
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 15%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+	display: inline-table;
+}
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+/* #9 Forum */
+.postforum {margin-bottom: 5px; border: 1px solid silver;}
+#forum table a { color: #000; text-decoration: none;  }
+#forum table a:hover { color: #EA1C1C; }
+
+#headerforum{
+width:100%;
+background-color:#0066ff;
+display: inline-table;
+font-family: franklin gothic medium,segoe ui;
+}
+
+#headerkomentar{
+	width:100%;
+background-color:#0066ff;
+	display: inline-table;
+font-family: franklin gothic medium,segoe ui;
+}
+
+#forumtanggal{
+color : #fff;
+line-height:30px;
+padding: 0 10px;
+float:left;
+}
+
+#forumbalas{
+background-color:#0066ff;
+font-family: franklin gothic medium,segoe ui;
+color : #fff;
+padding: 10px;
+}
+
+.pilihan {
+    position: relative;
+}
+
+.pilihan a:hover{
+	background-color:#0033cc;
+}
+
+.pilihan a{
+	display:block;
+	text-decoration:none;
+	line-height:30px;
+	padding: 0 10px;
+	color : #fff;
+}
+
+.pilihan:hover .dropdownforum{
+	display:block;
+}
+
+.dropdownforum{
+	display: none;
+	right:0;
+	position: absolute;
+	z-index: 2;
+}
+
+.dropdownforum a{
+	background-color: #6cf;
+	width : 60px;
+}
+.dropdownforum a:hover{
+	background-color:#0033cc;
+}
+
+#foruminfo{
+	border-bottom:1px solid #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#foruminfo .image { padding: 2px; border: 1px solid #B4B4B4; float: left; width:100px; height:100px; margin-left: 10px; text-align: center;}
+
+#foruminfo .image .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+#foruminfo .image img {
+	vertical-align: middle;
+	max-width:100px;
+	max-height:100px;
+}
+
+#foruminfo .penulis { padding: 5px; margin: 5px 0 0 10px; float: left;}
+
+#isiforum{
+	margin: 10px 10px 20px 10px;	
+min-height:100px;	
+}
+#isiforum img {
+  display: block;
+  max-width:100%;
+  max-height:100%;
+  width: auto;
+  height: auto;
+}
+#footerforum{
+	border-top:1px solid #ccc;
+	padding: 5px;
+}
+
+#foruminfob{
+	float: left; 
+	width: 20%;
+	padding-bottom: 10px;
+	margin-top: 5px;
+}
+#foruminfob .image { padding: 2px; border: 1px solid #B4B4B4; width:100px; height:100px; margin-left: 10px; text-align: center;}
+
+#foruminfob .image .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+#foruminfob .image img {
+	vertical-align: middle;
+	max-width:100px;
+	max-height:100px;
+ 
+}
+
+#foruminfob .penulis { padding: 5px; margin: 5px 0 0 5px; }
+#isiforumb{
+width: 100%;
+display: inline-table;
+}
+#pesanforum{
+	padding: 0px;
+	width: 75%;
+	float: left;
+	border-left:1px solid #ccc;
+	min-height:150px;
+}
+#pesanforum p{
+	margin: 5px 0 10px 5px;
+	text-align: justify;
+	line-height:17px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+#pesanforum img {
+  display: block;
+  max-width:100%;
+  max-height:100%;
+  width: auto;
+  height: auto;
+}
+
+.balasanforum{
+	margin-left: 10px;
+}
+
+.komenforum{
+	word-wrap: break-word;
+	text-align: justify;
+	border:1px solid #ccc;
+	margin-bottom: 10px;		
+}
+
+.komenforum .image { padding: 2px; margin: 5px 10px 0 5px; border: 1px solid #B4B4B4; float: left; width:50px; height:50px;}
+
+.komenforum .image .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.komenforum .image img {
+	vertical-align: middle;
+	max-width:50px;
+	max-height:50px;
+}
+.komenforum p{
+	margin: 10px 10px 20px 56px;		
+}
+
+#isiforumkomen{
+	margin: 10px 10px 20px 10px;	
+}
+#isiforumkomen img {
+  display: block;
+  max-width:100%;
+  max-height:100%;
+  width: auto;
+  height: auto;
+}
+.formbalas {margin-top: 50px; margin-bottom: 20px; border: 1px solid silver;}
+.formbalas .text {padding: 5px;}
+.infohalaman{margin-right:10px; float:left;}
+.pagination{ margin-top:10px; display:inline-table;}
+.pagination button { background-color:#fff; border:1px solid #666;}
+
+#sidebar_right {
+top: 10px;
+	width: 28%;
+	float: right;
+	margin-top : 10px;
+}
+#tab_berita {
+margin-bottom : 20px;
+}
+#tab_forum {
+margin-bottom : 20px;
+}
+#tab_klasemen {
+margin-bottom : 20px;
+}
+
+ /* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+} 
+/* Style the tab content */
+.tabcontentberita {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* Style the tab content */
+.tabcontentforum{
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+} 
+
+/* klasemen */
+
+.klasemen{	
+    width: 100%;
+    border: 1px solid #ddd; 
+	margin-bottom:10px;
+}
+.klasemen tr:nth-child(even) {
+    background-color: #dad7d7;
+}
+
+
+/* #10 sidebar right */
+.list { width:100%; margin: 15px 0 0px 5px;}
+.list .item { width: 100%; min-height: 85px; padding: 10px 0 0 0; margin: 0 0 0 0; overflow: hidden;  border-bottom : 1px solid silver; }
+.list .item:first-child { padding-top: 0; background: none; }
+.list .item .text { width: 210px; margin: 0 0 0 0; float: left; }
+.list .item .text p {margin: 5px 0 0 0;}
+.list .item .text a { font-size: 15px; color: #333333; text-decoration: none; }
+.list .item .text a:hover { color: #EA1C1C; }
+.list .item .image { margin: 0 15px 0 0; float: left; }
+.list .item .image img { border: 1px solid #B4B4B4; padding: 2px; display: block; }
+.list .item .info { width: 178px; color: #828181; font-size: 11px; font-weight: bold; float: left; }
+
+.list .itemforum { width: 260px; padding: 10px 0 0 0; margin: 0 0 0 0; overflow: hidden;  border-bottom : 1px solid silver; 	display: inline-table;}
+.list .itemforum:first-child { padding: 0; background: none; }
+.list .itemforum .text { width: 170px; margin: 0 0 0 0; float: left; }
+.list .itemforum .text p {margin: 5px 0 0 0;}
+.list .itemforum .text a { font-size: 15px; line-height: normal; color: #333333; text-decoration: none; }
+.list .itemforum .text a:hover { color: #EA1C1C; }
+.tanggal01{
+	font-size: 12px;
+	color: #7C7C7C;
+}
+
+.clear {
+	clear: both;
+}
+#footer{
+font-family: franklin gothic medium, segoe ui;
+text-align:left;
+padding:20px;
+background-color:#ccc;
+bottom: 0;
+}
+
+#footer a { color: #000; text-decoration: none;  }
+#footer a:hover { color: #EA1C1C; }
